@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="assets/lock.png"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <title>Crypto</title>
+        <link rel="stylesheet" href="index.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+    </head>
+    <body>
+        <div id="Header">
+            <h1 id="Header_title">Crypto</h1>
+        </div>
+        <a class="button" id="header_back" href="./index.html">Atras</a>
+        <div id="Welcome-outer-container">
+            <div class="Welcome-container">
+                <p class="form_p">Cual es el mensaje encriptado?</p>
+                <textarea placeholder="introduce un mensaje" id="Input-area"></textarea>
+                <p class="form_p">Que contraseña quieres usar para desencriptado el mensaje?</p>
+                <input type="text" id="pass"><br><br>
+                <button onclick="HTML_encript" class="button" id="decrypt_button">desencriptar el mensaje</button>
+            </div>   
+        </div>
+        <div id="Welcome-outer-container">
+            <div id="result-container" class="Welcome-container">
+                <p>Tu mensaje desencriptado:</p>
+                <h2 id="out"></h2>
+            </div>
+        </div>
+        <div id="name_container">
+            <p>Mateusz Kazimerczak</p>
+        </div>  
+    </body>
+    <script src="./script.js"></script>
+    <script>
+        document.getElementById("decrypt_button").addEventListener("click", HTML_decript)
+    </script>
+</html>
