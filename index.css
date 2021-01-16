@@ -19,6 +19,10 @@ p {
     padding-top: 2em;
 }
 
+#result-container {
+    padding: 2em;
+}
+
 #Header_title {
     font-family: 'Lobster';
     font-size: 5em;
